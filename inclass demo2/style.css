@@ -1,0 +1,34 @@
+body {
+	background:gray;}
+
+   h1 {
+		font-family: "Garamond", serif;
+		background: gray;
+		font-size: 150px;
+		line-height: 1em;
+		text-transform: uppercase;
+		color-font: white;
+	}
+	p {
+		background: rgba(0, 100, 255,0.3); 
+		font-size: 50px;
+		line-height: 1em;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+
+}
+#special {
+	font-weight: bold;
+	background:red;
+}
+
+.firstthree{
+	background:yellow;
+font-weight: bolder;
+letter-spacing: .2em
+}
+
+a:active {color: red;} 
+
+
+
