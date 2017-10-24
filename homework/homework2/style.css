@@ -1,0 +1,38 @@
+body {
+	background:white;}
+
+   h1 {
+		font-family: "Garamond", serif;
+		background: white;
+		font-size: 100px;
+		line-height: 1em;
+		lighting-color:red;
+	}
+	p {
+		background: white; 
+		font-size: 25px;
+		line-height: 2em;
+		letter-spacing: .05em;
+	
+}
+#special {
+	font-weight: bold;
+	background:red;
+}
+
+.firstthree{
+	background:yellow;
+font-weight: bolder;
+letter-spacing: .2em
+}
+
+a:active {color: red;} 
+
+.visible {
+  visibility: visible;
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
