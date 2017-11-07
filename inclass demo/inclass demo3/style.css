@@ -1,0 +1,65 @@
+body {
+	background:white;}
+
+   h1 {
+		font-family: "Garamond", serif;
+		background: white;
+		font-size: 50px;
+		line-height: 1em;
+		lighting-color:red;
+	}
+	p {
+		background: white; 
+		font-size: 12px;
+		line-height: 2em;
+		letter-spacing: .05em;
+	
+}
+#special {
+	font-weight: bold;
+	background:red;
+}
+
+.firstthree{
+	background:yellow;
+font-weight: bolder;
+letter-spacing: .2em
+}
+
+a:active {color: red;} 
+
+.visible {
+  visibility: visible;
+}
+
+.not-visible {
+  visibility: hidden;
+}
+.box {
+	width: 200px;
+    height: 200px;
+    background: rgba(0,0,0,0.2); 
+}
+
+.third {
+	width: 25%
+	margin-right: 2%;
+    float: left;
+}
+
+.clear {right;}
+
+#fix {position: fixed;
+top: 50px;
+right: 50px;}
+
+#fix p{ font-family: serif; }
+
+#absolute {position: absolute;
+top: 50px;}
+
+
+#relative {position: relative;
+top:50px left:50px;}
+
+.wrapper {width: 50vw;}
