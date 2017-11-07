@@ -1,4 +1,4 @@
-var namestring = "Aries,Taurus,Gemini,Cancer,Leo,Virgo,Libra,Scorpio,capricorn,Sagittarian,Aquarian,Pisce"
+var namestring = "ARIES:,TAURUS:,GEMINI:,CANCER:,LEO:,VIRGO:,LIBRA:,SCORPIO:,CAPRICORN:,SAGITTARIAN:,AQUARIAN:,PISCE:"
 
 console.log(namestring)
 
@@ -28,8 +28,7 @@ nameArray.forEach(make_a_list);
 function make_a_list(el, ix) {
 	var listItem = document.createElement("li")
 
-	listItem.textContent = el + ": index " + ix
-
+	listItem.textContent = el + descriptions[ix];
 	container.appendChild(listItem)
 }
 
@@ -38,9 +37,6 @@ var names = document.querySelectorAll(".output ul li")
 console.log(names)
 
 
-names.forEach(changeBackground)
 
-function changeBackground(el) {
-	el.style.backgroundColor = "rgba(0,0,10," + Math.random() + ")";
-}
+
 
