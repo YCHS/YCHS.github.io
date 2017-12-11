@@ -1,0 +1,246 @@
+body {
+		font-size: 100%;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 400;
+}
+
+/*----------------------------------- Slider -----------------------------------*/
+.slider {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+		z-index: 999;
+}
+
+.slider a {
+		display: block;
+		height: 6px;
+		padding: 14px 20px;
+		margin: 20px 0;
+		text-align: center; 
+		text-decoration: none;
+		color: white;
+		background: rgba(0, 0, 0, 0.2);
+		border: 1px solid white;
+		border-radius: 8px; 
+}
+
+.slider a.active {
+		background: rgba(255, 255, 255, 1);
+		color: black;
+		border-color: black;
+}
+
+/*----------------------------------- Container -----------------------------------*/
+.z-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		height: 100vh;
+		width: 100%;
+		z-index: 1;
+}
+
+.z-container.z-active {
+		z-index: 2;
+}
+
+/*----------------------------------- Text -----------------------------------*/
+.text-big {
+		font-family: 'Poppins', sans-serif;
+		font-size: 7.5em;
+		font-weight: 700;
+		line-height: 110px;
+		margin-left: -8px;
+}
+
+.text-normal {
+		font-size: 14px;
+		color: rgba(255, 255, 255, 0.9);
+		line-height: 22px;
+		margin-top: 25px;
+		font-weight: bold;
+}
+
+/*----------------------------------- Item -----------------------------------*/
+.z-item {
+		height: 100vh;
+		color: #fff;
+		transition: transform 0.1s linear;
+}
+
+.z-item-left {
+		display: flex;
+		align-items: center;
+		width: 65%;
+		transform-origin: left bottom;
+		transition: transform 0.1s linear 0.4s;
+		opacity: 0;
+		position: relative;
+		overflow: hidden;
+}
+
+.z-item-right {
+		width: 35%;
+		transform-origin: right center;
+		transition: transform 0.1s linear 0s;
+		opacity: 0;
+}
+
+.z-content {
+		margin-left: 80px;
+		width: 55%;
+		opacity: 1;
+		transform: translate3d(0,0,0);
+		transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+}
+
+.z-image {
+		position: absolute;
+		bottom: 20px;
+		right: 20%;
+		max-height: 800px;
+		max-width: 800px;
+		height: auto;
+		width: auto;
+		background-color: transparent;
+		opacity: 1;
+		transform: translate3d(0,0,0);
+		transition: opacity 0.43s 0.6s, transform 0.4s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+}
+
+.z-preStart .z-item-left,
+.z-preStart .z-item-right,
+.z-active .z-item-left,
+.z-active .z-item-right {
+		opacity: 1;
+}
+
+/*----------------------------------- constalletion -----------------------------------*/
+.z-aries .z-item-left {
+		background: #EC6B6B;
+}
+
+.z-aries .z-item-right {
+		background: #795D56;
+}
+
+.z-taurus .z-item-left {
+		background: #F0BC2E;
+}
+
+.z-taurus .z-item-right {
+		background: #6C644D;
+}
+
+.z-gemini .z-item-left {
+		background: #8F2717;
+}
+
+.z-gemini .z-item-right {
+		background: #9F9B9A;
+}
+
+.z-cancer .z-item-left {
+		background: #4AB55F;
+}
+
+.z-cancer .z-item-right {
+		background: #ED938C;
+}
+
+.z-leo .z-item-left {
+		background: #F28436;
+}
+
+.z-leo .z-item-right {
+		background: #F1BD46;
+}
+
+.z-virgo .z-item-left {
+		background: #895A22;
+}
+
+.z-virgo .z-item-right {
+		background: #CCB08E;
+}
+
+.z-libra .z-item-left {
+		background: #8FD8F4;
+}
+
+.z-libra .z-item-right {
+		background: #FDC8DE;
+}
+
+.z-scorpio .z-item-left {
+		background: #BA4C3E;
+}
+
+.z-scorpio .z-item-right {
+		background: #241C1B;
+}
+
+.z-sagittarius .z-item-left {
+		background: #146A99;
+}
+
+.z-sagittarius .z-item-right {
+		background: #616E70;
+}
+
+.z-capricorn .z-item-left {
+		background: #98ACC7;
+}
+
+.z-capricorn .z-item-right {
+		background: #3D3D3E;
+}
+
+.z-aquarius .z-item-left {
+		background: #BCBABB;
+}
+
+.z-aquarius .z-item-right {
+		background: #EEB7D0;
+}
+
+.z-pisces .z-item-left {
+		background: #C93C4D;
+}
+
+.z-pisces .z-item-right {
+		background: #F9A0AA;
+}
+/*----------------------------------- Animate -----------------------------------*/
+.z-container.animate-start .z-content {
+		transform: translate3d(0, -200%, 0);
+		opacity: 0;
+}
+
+.z-container.animate-start .z-image {
+		transform: translate3d(-200px, 0, 0);
+		opacity: 0;
+}
+
+.z-container.animate-end .z-item-left {
+		transform: scaleY(0);
+}
+
+.z-container.animate-end .z-item-right {
+		transform: scaleX(0);
+}
+
+.z-container.animate-end .z-content {
+		transform: translate3d(0, 200%, 0);
+		opacity: 0;
+}
+
+.z-container.animate-end .z-image {
+		transform: translate3d(200px, 0, 0);
+		opacity: 0;
+}

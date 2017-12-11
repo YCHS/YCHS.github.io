@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>constellation.com</title>
+        <body style="background-color:black;">
+
+                <video width="600" height="409" id="videoPlayer" controls="controls">
+ <!-- MP4 Video -->
+ <source src="videoplayback.mp4" type="video/mp4"></video>
+
+    <A HREF="index.html">_____________________________________________________________________________</A>
+
+<script>
+    var videoPlayer = document.getElementById('videoPlayer');
+
+    // Auto play, half volume.
+    videoPlayer.play()
+    videoPlayer.volume = 0.5;
+
+    // Play / pause.
+    videoPlayer.addEventListener('click', function () {
+        if (videoPlayer.paused == false) {
+            videoPlayer.pause();
+            videoPlayer.firstChild.nodeValue = 'Play';
+        } else {
+            videoPlayer.play();
+            videoPlayer.firstChild.nodeValue = 'Pause';
+        }
+    });
+        </body>
+        <script src="generate.js"></script>
+        <script src="script.js"></script>
+
+</html>
+
