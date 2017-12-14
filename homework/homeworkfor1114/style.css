@@ -9,13 +9,15 @@ h1 {
 
 p {
 	font-family: "Helvetica Neue", Arial, sans-serif; 	
-	background: rgba(0,255,255,0.3);
-	font-size: 50px;
+	font-size: 20px;
 	line-height: 1.4em;
-	letter-spacing: .200em;
+	letter-spacing: .05em;
 	/*text-transform: uppercase; */
 }
+#Virgo:hover{
+	color: red;
 
+}
 .color: {
 	color: red;
 }
